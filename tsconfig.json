@@ -1,0 +1,24 @@
+{
+    
+    "compilerOptions": {
+        
+        "target": "ES5",
+        //type of javascript to be created when we compile it. Javascript is an ecma script with different version.
+        //agreed upon principle and requirement the script follows. Certain browsers handle only up to E-3?
+        //Node can go up to 7.
+        "module": "CommonJS",
+        //importing and exporting. There are others that are more specialized.
+        "noImplicitAny": true,
+        //when we type properties, they have to be any explicitly not happen stance
+        "removeComments": true,
+        //no comments 
+        "sourceMap": true,
+        //creates source map so we can use a debugger.
+        "outDir": "dist",
+        //must match folder to do output
+        "esModuleInterop":true
+        //how we can import modules using * or default as without direct references/imports?
+    },
+
+    "include": ["src/**/*"]
+}
